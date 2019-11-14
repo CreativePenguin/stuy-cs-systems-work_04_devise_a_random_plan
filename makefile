@@ -5,13 +5,13 @@ else
 endif
 
 all: main.o
-	gcc -o prog main.o
+	$(CC) -o prog main.o
 
 run:
 	./prog
 
 main.o: main.c
-	gcc -c main.c
+	$(CC) -c main.c
 
 clean:
 	rm *.o prog
